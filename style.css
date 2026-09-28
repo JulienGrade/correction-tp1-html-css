@@ -261,3 +261,45 @@ a:focus-visible {
 .primary-button:hover {
     background: #5b42ea;
 }
+
+/* Événements Section */
+
+.events-section {
+    padding-block: 5rem 6rem;
+    background: var(--white);
+}
+
+.section-heading {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.section-heading h2,
+.newsletter h2 {
+    margin: 0.65rem 0 0;
+    font-size: clamp(2rem, 3.5vw, 3.25rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.text-link {
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid currentColor;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.text-link:hover {
+    color: var(--violet);
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+}
+
