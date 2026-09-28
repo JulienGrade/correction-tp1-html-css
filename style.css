@@ -1,4 +1,4 @@
-/* TP 1 - WAVE */
+/* Déclaration de variables */
 :root {
     --navy: #0d1021;
     --surface: #f4f5f7;
@@ -11,6 +11,7 @@
     --radius: 22px;
 }
 
+/*  Style commun */
 * {
     box-sizing: border-box;
 }
@@ -27,3 +28,42 @@ body {
     font-size: 1rem;
     line-height: 1.5;
 }
+
+/* Classe commune pour masquer des éléments mais qu'il reste présent dans le html */
+.visuallyhidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Style appliqué à des éléments html */
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--cyan);
+    outline-offset: 4px;
+}
+
+/* Style appliqué aux containers */
+.container {
+    width: min(calc(100% - 48px), var(--container));
+    margin-inline: auto;
+}
+
+
+
