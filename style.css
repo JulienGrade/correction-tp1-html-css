@@ -128,3 +128,128 @@ a:focus-visible {
 .account-link:hover {
     background: var(--violet);
 }
+
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: 0.88fr 1.12fr;
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: center;
+    padding-block: 4rem;
+}
+
+.hero-copy {
+    padding-block: 2rem;
+}
+
+.kicker,
+.eyebrow {
+    margin: 0;
+    color: var(--violet);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.kicker {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.kicker span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--violet);
+}
+
+.hero h1 {
+    max-width: 580px;
+    margin: 1.35rem 0 1.4rem;
+    font-size: clamp(3.25rem, 5.4vw, 5.25rem);
+    line-height: 1;
+    letter-spacing: -0.055em;
+}
+
+.hero-text {
+    max-width: 500px;
+    margin: 0 0 2rem;
+    color: var(--muted);
+    font-size: 1.15rem;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    min-height: 52px;
+    padding: 0.85rem 1.25rem;
+    border-radius: 999px;
+    font-weight: 750;
+    transition:
+            transform 160ms ease,
+            background-color 160ms ease;
+}
+
+.primary-button {
+    color: var(--white);
+    background: var(--violet);
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    transform: translateY(-2px);
+}
+
+.primary-button:hover {
+    background: #5b42ea;
+}
+
+.hero-visual {
+    position: relative;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 28px;
+    background: var(--navy);
+    box-shadow: 0 24px 70px rgba(13, 16, 33, 0.18);
+}
+
+.hero-visual > img {
+    width: 100%;
+    aspect-ratio: 1.12 / 1;
+    object-fit: cover;
+    object-position: 62% center;
+}
+
+.hero-visual figcaption {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.15rem;
+    color: var(--white);
+    background: rgba(13, 16, 33, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+}
+
+.hero-visual figcaption span {
+    color: var(--cyan);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.hero-visual figcaption strong {
+    font-size: 0.9rem;
+}
